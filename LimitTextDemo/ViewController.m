@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "TextFieldOrTextViewLimit.h"
+@interface ViewController ()<UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -16,14 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _textField.tag = 10;//限制10个字符
+    [_textField addTarget:self action:@selector(textDidChange:) forControlEvents:UIControlEventEditingChanged];
+    
+
+    _textView.delegate = self;//限制12个字符
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)textFieldDidChange:(UITextField *)textField{
+    [TextFieldOrTextViewLimit textDidChange:textField range:textField.tag];
 }
-
-
+-(void)textViewDidChange:(UITextView *)textView{
+    [TextFieldOrTextViewLimit textDidChange:textView range:12];
+}
 @end

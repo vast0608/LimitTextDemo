@@ -13,6 +13,7 @@
 		2CD07081202430CB003C74E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD07080202430CB003C74E7 /* Assets.xcassets */; };
 		2CD07084202430CB003C74E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD07082202430CB003C74E7 /* LaunchScreen.storyboard */; };
 		2CD07087202430CB003C74E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD07086202430CB003C74E7 /* main.m */; };
+		2CD0708F20243106003C74E7 /* TextFieldOrTextViewLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0708E20243106003C74E7 /* TextFieldOrTextViewLimit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		2CD07083202430CB003C74E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CD07085202430CB003C74E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CD07086202430CB003C74E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CD0708D20243106003C74E7 /* TextFieldOrTextViewLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldOrTextViewLimit.h; sourceTree = "<group>"; };
+		2CD0708E20243106003C74E7 /* TextFieldOrTextViewLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldOrTextViewLimit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				2CD07078202430CB003C74E7 /* AppDelegate.m */,
 				2CD0707A202430CB003C74E7 /* ViewController.h */,
 				2CD0707B202430CB003C74E7 /* ViewController.m */,
+				2CD0708D20243106003C74E7 /* TextFieldOrTextViewLimit.h */,
+				2CD0708E20243106003C74E7 /* TextFieldOrTextViewLimit.m */,
 				2CD0707D202430CB003C74E7 /* Main.storyboard */,
 				2CD07080202430CB003C74E7 /* Assets.xcassets */,
 				2CD07082202430CB003C74E7 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 			files = (
 				2CD0707C202430CB003C74E7 /* ViewController.m in Sources */,
 				2CD07087202430CB003C74E7 /* main.m in Sources */,
+				2CD0708F20243106003C74E7 /* TextFieldOrTextViewLimit.m in Sources */,
 				2CD07079202430CB003C74E7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
